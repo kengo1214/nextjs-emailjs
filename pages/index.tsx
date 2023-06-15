@@ -36,6 +36,7 @@ export default function Home() {
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className={styles.body}>
+        <h1>Nodemailer → EmailJS</h1>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>

@@ -1,7 +1,6 @@
 .body {
   width: 100%;
   min-height: 100vh;
-  border: 3px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,9 @@
   }
 
   input,
-  textarea {
+  textarea,
+  h1 {
     margin: 0 0 2.5rem;
+    
   }
 }

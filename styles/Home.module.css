@@ -1,7 +1,6 @@
 .body {
   width: 100%;
   min-height: 100vh;
-  border: 3px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,8 @@
   margin: 0 0 1rem;
 }
 .body input,
-.body textarea {
+.body textarea,
+.body h1 {
   margin: 0 0 2.5rem;
 }
 /*# sourceMappingURL=Home.module.css.map */

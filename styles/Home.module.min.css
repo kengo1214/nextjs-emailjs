@@ -1,2 +1,2 @@
-.body{width:100%;min-height:100vh;border:3px solid red;display:flex;justify-content:center;align-items:center;flex-direction:column}.body label{margin:0 0 1rem}.body input,.body textarea{margin:0 0 2.5rem}
+.body{width:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column}.body label{margin:0 0 1rem}.body input,.body textarea,.body h1{margin:0 0 2.5rem}
 /*# sourceMappingURL=Home.module.min.css.map */
