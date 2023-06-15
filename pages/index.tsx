@@ -6,13 +6,9 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
   const form = useRef<HTMLFormElement | null>(null);
 
-  const serverId = process.env.SERVICE_ID as string;
-  const templateId = process.env.TEMPLATE_ID as string;
-  const publicKey = process.env.PUBLIC_KEY as string;
-
-  // const serverId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
-  // const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
-  // const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
+  const serverId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+  const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
