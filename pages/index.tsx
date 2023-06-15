@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import styles from "../styles/Home.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className={styles.body}>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
