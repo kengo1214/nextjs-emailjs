@@ -1,26 +1,22 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "../styles/Home.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   const form = useRef<HTMLFormElement | null>(null);
+
+  const serverId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+  const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
       emailjs
-        .sendForm(
-          "service_5ttfhan",
-          "template_czborkj",
-          form.current,
-          "hpvW0zEhHMupBhwZi"
-        )
+        .sendForm(serverId, templateId, form.current, publicKey)
+
         .then(
           (result) => {
             console.log(result.text);
